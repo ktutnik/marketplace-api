@@ -22,4 +22,9 @@ export class Shop extends EntityBase {
     @OneToMany(x => Item, x => x.shop)
     items: Item[]
 
+    @preSave("post")
+    async setShopOwner(@bind.user() user: JwtClaims) {
+        const owner = await getRepository(ShopUser).save({ user: { id: user.userId }, role: "ShopOwner" })
+        this.users = [ owner ]
+    }
 }
