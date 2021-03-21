@@ -1,10 +1,17 @@
 import { api, authorize, entityProvider, HttpStatusError, route } from "@plumier/core"
 import { type } from "@plumier/reflect"
+import { createGenericController } from "@plumier/typeorm"
 import { getRepository } from "typeorm"
 
 import { Cart } from "../cart/cart-entity"
-import { Item } from "../shop-item/shop-item-entity"
+import { Item } from "../item/item-entity"
 import { CartItem } from "./cart-item-entity"
+
+
+export const CartItemGenericController = createGenericController([Cart, "items"], c => {
+    c.methods("GetMany", "GetOne", "Post").ignore()
+    c.methods("Put", "Patch", "Delete").authorize("CartOwner")
+})
 
 @api.tag("Carts CartItems")
 @route.root("carts/:pid/items")

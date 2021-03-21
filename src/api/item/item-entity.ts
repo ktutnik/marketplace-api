@@ -9,10 +9,6 @@ import { Shop } from "../shop/shop-entity"
 @genericController(c => {
     c.mutators().ignore()
 })
-@genericController(c => {
-    c.useNested(Shop, "items")
-    c.mutators().authorize("ShopOwner", "ShopStaff")
-})
 @Entity()
 export class Item extends EntityBase {
 

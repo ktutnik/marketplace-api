@@ -7,10 +7,6 @@ import { Shop } from "../shop/shop-entity"
 import { val } from "@plumier/validator"
 
 
-@genericController(c => {
-    c.useNested(Shop, "users")
-    c.mutators().authorize("ShopOwner")
-})
 @Entity()
 export class ShopUser extends EntityBase {
 

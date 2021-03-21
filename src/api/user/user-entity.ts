@@ -1,6 +1,7 @@
 import bcrypt from "bcryptjs"
 import { authorize, genericController, preSave, val } from "plumier"
 import { Column, Entity, OneToMany } from "typeorm"
+import { ShopUser } from "../shop-user/shop-user-entity"
 import { ShippingAddress } from "../user-shipping-address/user-shipping-address-entity"
 
 import { EntityBase } from "../_shared/entity-base"
@@ -14,7 +15,7 @@ import { EntityBase } from "../_shared/entity-base"
     c.methods("Delete", "GetOne", "Patch", "Put").authorize("ResourceOwner")
 
     // GET /users?limit&offset&filter only accessible by Admin
-    c.getMany().authorize("Public")
+    c.getMany().authorize("Admin")
 })
 @Entity()
 export class User extends EntityBase {
@@ -45,6 +46,9 @@ export class User extends EntityBase {
 
     @OneToMany(x => ShippingAddress, x => x.user)
     addresses:ShippingAddress[]
+
+    @OneToMany(x => ShopUser, x => x.user)
+    shops:ShopUser[]
 
     @preSave()
     async hashPassword() {
