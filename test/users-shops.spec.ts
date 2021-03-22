@@ -24,4 +24,12 @@ describe("Shop User", () => {
         expect(result[0]).toMatchSnapshot({shopId:expect.any(Number)})
         expect(result[1]).toMatchSnapshot({shopId:expect.any(Number)})
     })
+    it("Should not accessible by other user", async () => {
+        const app = await createApp({ mode: "production" })
+        const { owner: ali, staffs } = await createShop(app, { name: "Ali Shop" }, { email: "ali@gmail.com" })
+        const { body: result } = await supertest(app.callback())
+            .get(`/api/v1/users/${ali.id}/shops`)
+            .set("Authorization", `Bearer ${staffs[0].token}`)
+            .expect(401)
+    })
 })
