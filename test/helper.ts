@@ -4,6 +4,7 @@ import { join } from "path"
 import { JwtClaims } from "plumier"
 import supertest from "supertest"
 import { getConnection } from "typeorm"
+import { Shop } from "../src/api/shops/shops-entity"
 import { User } from "../src/api/users/users-entity"
 
 
@@ -37,23 +38,24 @@ export async function createUser(app: any, user: Partial<User> = {}) {
 }
 
 
-export async function createShop(app: any, hasStaff = false) {
-    const owner = await createUser(app)
+export async function createShop(app: any, shop?: Partial<Shop>, owner?: Partial<User>, staffs?: Partial<User>[]) {
+    const shopOwner = await createUser(app, owner)
     const { body } = await supertest(app.callback())
         .post("/api/v1/shops")
-        .send({ name: "Putra Mahkota" })
-        .set("Authorization", `Bearer ${owner.token}`)
+        .send({ name: "Putra Mahkota", ...shop })
+        .set("Authorization", `Bearer ${shopOwner.token}`)
         .expect(200)
-    let staff: { id: any, token: string } | undefined
-    if (hasStaff) {
-        staff = await createUser(app, { name: "Shop Staff", email: "shop.staff@gmail.com" })
+    const shopStaffs = []
+    for (const staff of staffs ?? [{ email: "putra.staff@gmail.com", name: "Putra Mahkota Staff" }]) {
+        const result = await createUser(app, staff)
+        shopStaffs.push(result)
         await supertest(app.callback())
             .post(`/api/v1/shops/${body.id}/users`)
-            .send({ user: staff.id })
-            .set("Authorization", `Bearer ${owner.token}`)
+            .send({ user: result.id })
+            .set("Authorization", `Bearer ${shopOwner.token}`)
             .expect(200)
     }
-    return { owner, staff, shop: <{ id: number }>body }
+    return { owner: shopOwner, staffs: shopStaffs, shop: <{ id: number }>body }
 }
 
 export async function closeConnection() {
