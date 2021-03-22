@@ -1,6 +1,6 @@
 import { entityPolicy } from "plumier"
 
-import { User } from "./user-entity"
+import { User } from "./users-entity"
 
 
 entityPolicy(User)

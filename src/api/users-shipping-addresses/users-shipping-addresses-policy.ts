@@ -1,6 +1,6 @@
 import { entityPolicy } from "plumier";
 import { getRepository } from "typeorm";
-import { ShippingAddress } from "./user-shipping-address-entity";
+import { ShippingAddress } from "./users-shipping-addresses-entity";
 
 
 

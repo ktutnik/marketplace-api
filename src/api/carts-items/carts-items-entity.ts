@@ -2,8 +2,8 @@ import { val } from "@plumier/validator"
 import { Column, Entity, ManyToOne } from "typeorm"
 
 import { EntityBase } from "../_shared/entity-base"
-import { Cart } from "../carts/cart-entity"
-import { Item } from "../items/item-entity"
+import { Cart } from "../carts/carts-entity"
+import { Item } from "../items/items-entity"
 
 
 

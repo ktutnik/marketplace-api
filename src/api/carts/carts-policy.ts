@@ -1,6 +1,6 @@
 import { entityPolicy } from "@plumier/core";
 import { getRepository } from "typeorm";
-import { Cart } from "./cart-entity";
+import { Cart } from "./carts-entity";
 
 
 entityPolicy(Cart)

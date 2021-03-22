@@ -2,9 +2,9 @@ import { HttpStatusError, GenericControllerConfiguration } from "plumier"
 import { GenericController } from "@plumier/typeorm"
 import { getRepository } from "typeorm"
 
-import { Cart } from "../carts/cart-entity"
-import { Item } from "../items/item-entity"
-import { CartItem } from "./cart-item-entity"
+import { Cart } from "../carts/carts-entity"
+import { Item } from "../items/items-entity"
+import { CartItem } from "./carts-items-entity"
 
 const config: GenericControllerConfiguration = c => {
     c.methods("GetMany", "GetOne", "Post").ignore()

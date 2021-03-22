@@ -2,17 +2,8 @@
 
 exports[`Shop User Should able to add user by shop owner 1`] = `
 Object {
-  "createdAt": Any<String>,
-  "deleted": false,
-  "id": Any<Number>,
+  "name": "John Doe Clone",
   "role": "ShopStaff",
-  "updatedAt": Any<String>,
-  "user": Object {
-    "createdAt": Any<String>,
-    "deleted": false,
-    "id": Any<Number>,
-    "name": "John Doe Clone",
-    "updatedAt": Any<String>,
-  },
+  "userId": Any<Number>,
 }
 `;

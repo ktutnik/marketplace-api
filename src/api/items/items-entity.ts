@@ -4,7 +4,7 @@ import { val } from "@plumier/validator"
 import { Column, Entity, ManyToOne } from "typeorm"
 
 import { EntityBase } from "../_shared/entity-base"
-import { Shop } from "../shops/shop-entity"
+import { Shop } from "../shops/shops-entity"
 
 @genericController(c => {
     c.mutators().ignore()

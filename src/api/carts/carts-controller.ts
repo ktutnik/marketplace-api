@@ -1,9 +1,9 @@
 import { api, bind, route } from "@plumier/core";
 import { getRepository } from "typeorm";
-import { Cart } from "./cart-entity";
+import { Cart } from "./carts-entity";
 import { type } from "@plumier/reflect"
 import { JwtClaims } from "plumier";
-import { CartItem } from "../carts-items/cart-item-entity";
+import { CartItem } from "../carts-items/carts-items-entity";
 
 
 @api.tag("Carts")
