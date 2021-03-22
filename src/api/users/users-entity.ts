@@ -1,10 +1,10 @@
 import bcrypt from "bcryptjs"
 import { authorize, genericController, preSave, val } from "plumier"
 import { Column, Entity, OneToMany } from "typeorm"
-import { ShopUser } from "../shops-users/shops-users-entity"
-import { ShippingAddress } from "../users-shipping-addresses/users-shipping-addresses-entity"
 
 import { EntityBase } from "../_shared/entity-base"
+import { ShopUser } from "../shops-users/shops-users-entity"
+import { ShippingAddress } from "../users-shipping-addresses/users-shipping-addresses-entity"
 
 @genericController(c => {
     // POST /users accessible by public

@@ -1,5 +1,5 @@
+import { noop } from "@plumier/reflect"
 
-import {noop} from "@plumier/reflect"
 
 export class UserShopDto {
     @noop()

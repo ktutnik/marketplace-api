@@ -1,4 +1,4 @@
-import { val } from "@plumier/validator"
+import { val } from "plumier"
 import { Column, Entity, ManyToOne } from "typeorm"
 
 import { EntityBase } from "../_shared/entity-base"

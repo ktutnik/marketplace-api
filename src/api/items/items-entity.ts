@@ -1,10 +1,10 @@
-import { authorize } from "@plumier/core"
 import { genericController } from "@plumier/generic-controller"
-import { val } from "@plumier/validator"
+import { authorize, val } from "plumier"
 import { Column, Entity, ManyToOne } from "typeorm"
 
 import { EntityBase } from "../_shared/entity-base"
 import { Shop } from "../shops/shops-entity"
+
 
 @genericController(c => {
     c.mutators().ignore()

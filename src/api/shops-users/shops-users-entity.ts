@@ -1,11 +1,10 @@
-import { genericController } from "@plumier/generic-controller"
+import { noop } from "@plumier/reflect"
+import { val } from "plumier"
 import { Column, Entity, ManyToOne } from "typeorm"
-import {noop} from "@plumier/reflect"
 
 import { EntityBase } from "../_shared/entity-base"
-import { User } from "../users/users-entity"
 import { Shop } from "../shops/shops-entity"
-import { val } from "@plumier/validator"
+import { User } from "../users/users-entity"
 
 
 @Entity()

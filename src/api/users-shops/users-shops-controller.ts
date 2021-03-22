@@ -1,7 +1,7 @@
 import { GenericController } from "@plumier/typeorm"
 import { ResponseTransformer } from "plumier"
-import { ShopUser } from "../shops-users/shops-users-entity"
 
+import { ShopUser } from "../shops-users/shops-users-entity"
 import { User } from "../users/users-entity"
 import { UserShopDto } from "./users-shops-dto"
 

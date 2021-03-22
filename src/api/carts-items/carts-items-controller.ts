@@ -1,5 +1,5 @@
-import { HttpStatusError, GenericControllerConfiguration } from "plumier"
 import { GenericController } from "@plumier/typeorm"
+import { GenericControllerConfiguration, HttpStatusError } from "plumier"
 import { getRepository } from "typeorm"
 
 import { Cart } from "../carts/carts-entity"
@@ -24,7 +24,7 @@ export class CartItemController extends GenericController([Cart, "items"], confi
         if (exists) {
             exists.quantity += data.quantity
             await cartItemRepo.save(exists)
-            return { id: exists.id }
+            return exists
         }
         else {
             const inserted = await cartItemRepo.save(data)
