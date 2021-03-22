@@ -36,7 +36,7 @@ describe("Shop", () => {
             .get(`/api/v1/shops/${body.id}/users`)
             .set("Authorization", `Bearer ${user.token}`)
             .expect(200)
-        expect(result[0]).toMatchSnapshot({ ...ignore, user: { ...ignore } })
+        expect(result[0]).toMatchSnapshot({ userId: expect.any(Number) })
     })
     it("Should restrict other user to modify other shop", async () => {
         const app = await createApp({ mode: "production" })

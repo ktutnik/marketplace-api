@@ -2,19 +2,8 @@
 
 exports[`Shop Should assign person who register as owner 1`] = `
 Object {
-  "createdAt": Any<String>,
-  "deleted": false,
-  "id": Any<Number>,
+  "name": "John Doe",
   "role": "ShopOwner",
-  "updatedAt": Any<String>,
-  "user": Object {
-    "createdAt": Any<String>,
-    "deleted": false,
-    "email": "john.doe@gmail.com",
-    "id": Any<Number>,
-    "name": "John Doe",
-    "role": "User",
-    "updatedAt": Any<String>,
-  },
+  "userId": Any<Number>,
 }
 `;

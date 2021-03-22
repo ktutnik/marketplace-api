@@ -2,7 +2,7 @@
 
 exports[`Shop User Should able to add user by shop owner 1`] = `
 Object {
-  "name": "John Doe Clone",
+  "name": "Putra Mahkota Staff",
   "role": "ShopStaff",
   "userId": Any<Number>,
 }
