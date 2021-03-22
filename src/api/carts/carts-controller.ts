@@ -24,11 +24,9 @@ export class CartsController extends GenericController(Cart, config) {
     @route.get()
     async open(@bind.user() user: JwtClaims) {
         const cart = await this.getOpen(user)
-        const items = await getRepository(CartItem).createQueryBuilder()
-            .where({ cart: cart.id })
-            .groupBy("item.shop")
-            .select()
-        return { ...cart, items }
+        // const items =  await getRepository(CartItem).createQueryBuilder()
+        //     .where({ cart: cart.id })
+        return { ...cart,  }
     }
 
     @route.post()
