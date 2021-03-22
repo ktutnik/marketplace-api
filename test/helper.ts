@@ -4,7 +4,7 @@ import { join } from "path"
 import { JwtClaims } from "plumier"
 import supertest from "supertest"
 import { getConnection } from "typeorm"
-import { User } from "../src/api/user/user-entity"
+import { User } from "../src/api/users/user-entity"
 
 
 dotenv.config({ path: join(__dirname, ".env-test") })

@@ -2,8 +2,8 @@ import { bind, preSave, val } from "@plumier/core";
 import { genericController } from "@plumier/generic-controller";
 import { JwtClaims } from "plumier";
 import { Column, Entity, getRepository, OneToMany } from "typeorm";
-import { Item } from "../item/item-entity";
-import { ShopUser } from "../shop-user/shop-user-entity";
+import { Item } from "../items/item-entity";
+import { ShopUser } from "../shops-users/shop-user-entity";
 import { EntityBase } from "../_shared/entity-base";
 
 @genericController(c => {

@@ -1,6 +1,6 @@
 import { entityPolicy } from "@plumier/core";
 import { getRepository } from "typeorm";
-import { ShopUser } from "../shop-user/shop-user-entity";
+import { ShopUser } from "../shops-users/shop-user-entity";
 import { Shop } from "./shop-entity";
 
 

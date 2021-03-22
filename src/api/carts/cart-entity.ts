@@ -1,8 +1,8 @@
 import { genericController } from "@plumier/generic-controller";
 import { Column, Entity, ManyToOne, OneToMany } from "typeorm";
-import { CartItem } from "../cart-item/cart-item-entity";
-import { ShippingAddress } from "../user-shipping-address/user-shipping-address-entity";
-import { User } from "../user/user-entity";
+import { CartItem } from "../carts-items/cart-item-entity";
+import { ShippingAddress } from "../users-shipping-addresses/user-shipping-address-entity";
+import { User } from "../users/user-entity";
 import { EntityBase } from "../_shared/entity-base";
 
 @genericController(c => {

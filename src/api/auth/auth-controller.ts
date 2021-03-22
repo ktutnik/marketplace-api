@@ -4,7 +4,7 @@ import { authorize, bind, HttpStatusError, JwtClaims, response, route } from "pl
 import { getManager } from "typeorm"
 import { type } from "@plumier/reflect"
 
-import { User } from "../user/user-entity"
+import { User } from "../users/user-entity"
 import { Tokens } from "./auth-entity"
 
 

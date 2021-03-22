@@ -1,8 +1,8 @@
 import bcrypt from "bcryptjs"
 import { authorize, genericController, preSave, val } from "plumier"
 import { Column, Entity, OneToMany } from "typeorm"
-import { ShopUser } from "../shop-user/shop-user-entity"
-import { ShippingAddress } from "../user-shipping-address/user-shipping-address-entity"
+import { ShopUser } from "../shops-users/shop-user-entity"
+import { ShippingAddress } from "../users-shipping-addresses/user-shipping-address-entity"
 
 import { EntityBase } from "../_shared/entity-base"
 

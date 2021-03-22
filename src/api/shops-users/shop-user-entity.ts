@@ -2,8 +2,8 @@ import { genericController } from "@plumier/generic-controller"
 import { Column, Entity, ManyToOne } from "typeorm"
 
 import { EntityBase } from "../_shared/entity-base"
-import { User } from "../user/user-entity"
-import { Shop } from "../shop/shop-entity"
+import { User } from "../users/user-entity"
+import { Shop } from "../shops/shop-entity"
 import { val } from "@plumier/validator"
 
 

@@ -3,7 +3,7 @@ import { getRepository } from "typeorm";
 import { Cart } from "./cart-entity";
 import { type } from "@plumier/reflect"
 import { JwtClaims } from "plumier";
-import { CartItem } from "../cart-item/cart-item-entity";
+import { CartItem } from "../carts-items/cart-item-entity";
 
 
 @api.tag("Carts")
