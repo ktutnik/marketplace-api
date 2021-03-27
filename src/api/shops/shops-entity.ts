@@ -3,7 +3,7 @@ import { bind, JwtClaims, preSave, val } from "plumier"
 import { Column, Entity, getRepository, OneToMany } from "typeorm"
 
 import { EntityBase } from "../_shared/entity-base"
-import { Item } from "../items/items-entity"
+import { Product } from "../products/product-entity"
 import { ShopUser } from "../shops-users/shops-users-entity"
 
 @genericController(c => {
@@ -19,8 +19,8 @@ export class Shop extends EntityBase {
     @OneToMany(x => ShopUser, x => x.shop)
     users: ShopUser[]
 
-    @OneToMany(x => Item, x => x.shop)
-    items: Item[]
+    @OneToMany(x => Product, x => x.shop)
+    products: Product[]
 
     @preSave("post")
     async setShopOwner(@bind.user() user: JwtClaims) {

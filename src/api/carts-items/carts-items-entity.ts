@@ -3,7 +3,7 @@ import { Column, Entity, ManyToOne } from "typeorm"
 
 import { EntityBase } from "../_shared/entity-base"
 import { Cart } from "../carts/carts-entity"
-import { Item } from "../items/items-entity"
+import { Product } from "../products/product-entity"
 
 
 
@@ -13,8 +13,8 @@ export class CartItem extends EntityBase{
     cart:Cart
 
     @val.required()
-    @ManyToOne(x => Item)
-    item:Item
+    @ManyToOne(x => Product)
+    product:Product
 
     @val.required()
     @Column()

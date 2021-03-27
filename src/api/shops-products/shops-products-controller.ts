@@ -2,6 +2,6 @@ import { GenericController } from "@plumier/typeorm"
 import { Shop } from "../shops/shops-entity"
 
 
-export class ShopItemController extends GenericController([Shop, "items"], c => {
+export class ShopItemController extends GenericController([Shop, "products"], c => {
     c.mutators().authorize("ShopOwner", "ShopStaff")
 }) { }

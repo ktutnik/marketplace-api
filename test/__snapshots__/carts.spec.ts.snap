@@ -5,6 +5,7 @@ Object {
   "createdAt": Any<String>,
   "deleted": false,
   "id": Any<Number>,
+  "items": Array [],
   "state": "Open",
   "updatedAt": Any<String>,
   "user": Object {

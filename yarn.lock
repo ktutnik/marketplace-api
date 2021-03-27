@@ -493,101 +493,103 @@
   dependencies:
     vary "^1.1.2"
 
-"@plumier/core@1.0.0-canary.kmk7q7m0.0+fc85e35":
-  version "1.0.0-canary.kmk7q7m0.0"
-  resolved "https://registry.yarnpkg.com/@plumier/core/-/core-1.0.0-canary.kmk7q7m0.0.tgz#0032d34f9c4f7bdb392449f9eee9c02a2019ba10"
-  integrity sha512-HBDuww6zC0t4Pq2E5vflNG17pUbjmB+7tpKWZpmcdbe2CarD5F7dK7fnQjhD4qsiYTCu2JvEfrpnBLJ7JQsy1w==
+"@plumier/core@1.0.0-canary.kmr00yo9.0+2c0ef31":
+  version "1.0.0-canary.kmr00yo9.0"
+  resolved "https://registry.yarnpkg.com/@plumier/core/-/core-1.0.0-canary.kmr00yo9.0.tgz#c2b504f15d94da098682bfdfc9fb389d2f3a550b"
+  integrity sha512-26K7gP1OW1pDJgKOXWkDVEkLEEE8TX0rtgR46unA2p/HYKlfcr2bYRQNzLx2hS5b/fcIItp2VkoKy7SSgMityQ==
   dependencies:
-    "@plumier/reflect" "1.0.0-canary.kmk7q7m0.0+fc85e35"
-    "@plumier/validator" "1.0.0-canary.kmk7q7m0.0+fc85e35"
+    "@plumier/reflect" "1.0.0-canary.kmr00yo9.0+2c0ef31"
+    "@plumier/validator" "1.0.0-canary.kmr00yo9.0+2c0ef31"
+    "@types/debug" "^4.1.5"
     "@types/glob" "^7.1.3"
     chalk "^4.1.0"
+    debug "^4.3.1"
     glob "^7.1.6"
     path-to-regexp "^6.2.0"
     tslib "^2.1.0"
 
-"@plumier/generic-controller@1.0.0-canary.kmk7q7m0.0+fc85e35":
-  version "1.0.0-canary.kmk7q7m0.0"
-  resolved "https://registry.yarnpkg.com/@plumier/generic-controller/-/generic-controller-1.0.0-canary.kmk7q7m0.0.tgz#dd038aa33e90c1ac821e494e6f749819d9696241"
-  integrity sha512-0TpOYtvjzr79VIp9jGH1lGAkupy/i7Ig4eiV0CP7YgEmnnNA1pEWuEZ1qLUuTV1JVKDLK9Prb0UDuXVqix7yiQ==
+"@plumier/generic-controller@1.0.0-canary.kmr00yo9.0+2c0ef31":
+  version "1.0.0-canary.kmr00yo9.0"
+  resolved "https://registry.yarnpkg.com/@plumier/generic-controller/-/generic-controller-1.0.0-canary.kmr00yo9.0.tgz#f063e516c3a4886dda44aad970a2ecf8dff0940a"
+  integrity sha512-ICgwO7gzQ0NV2PmRbAgVJ0G5VqkgyeNRpCLn+9G88ZrRWXU7vyZigB+FnQfThzHdRfAecv66rQ6uZFedZvMYcQ==
   dependencies:
-    "@plumier/core" "1.0.0-canary.kmk7q7m0.0+fc85e35"
-    "@plumier/query-parser" "1.0.0-canary.kmk7q7m0.0+fc85e35"
+    "@plumier/core" "1.0.0-canary.kmr00yo9.0+2c0ef31"
+    "@plumier/query-parser" "1.0.0-canary.kmr00yo9.0+2c0ef31"
 
-"@plumier/jwt@1.0.0-canary.kmk7q7m0.0":
-  version "1.0.0-canary.kmk7q7m0.0"
-  resolved "https://registry.yarnpkg.com/@plumier/jwt/-/jwt-1.0.0-canary.kmk7q7m0.0.tgz#f0a4157dd8ac28d05af6dba9debd247aa479b5cb"
-  integrity sha512-GOeH345gs0MjJp4Bp2up2bKY2CbnLNgyk+QSfAi1sFzjzx0fGc/P7bJCGkQgP2RxxBeBAiesBHj3L4ANDkCgzg==
+"@plumier/jwt@1.0.0-canary.kmr00yo9.0":
+  version "1.0.0-canary.kmr00yo9.0"
+  resolved "https://registry.yarnpkg.com/@plumier/jwt/-/jwt-1.0.0-canary.kmr00yo9.0.tgz#f4387f3fd4f8d90d4b9d850e240ad1af6c95d079"
+  integrity sha512-+nBBkV6/AOcLNUdfnxHvyA6ZXT0uZY63Rnp0rkzD7jwKLfhc73WdGPQp5um5Sw6A4LSTbCuOygNcm/ZilfTfYA==
   dependencies:
-    "@plumier/core" "1.0.0-canary.kmk7q7m0.0+fc85e35"
+    "@plumier/core" "1.0.0-canary.kmr00yo9.0+2c0ef31"
     koa-jwt "^4.0.0"
 
-"@plumier/query-parser@1.0.0-canary.kmk7q7m0.0+fc85e35":
-  version "1.0.0-canary.kmk7q7m0.0"
-  resolved "https://registry.yarnpkg.com/@plumier/query-parser/-/query-parser-1.0.0-canary.kmk7q7m0.0.tgz#2b8b0769a2e5f473ec550e7f222c3b9c273a9979"
-  integrity sha512-xER2eHF7eo7v2TEhXASqZr/sTcJ1yZjiMrt+5TYQ41rEFwGe/qV+6PcJhCy4kfK+B4FNk5OhHxtYqD0A8NEeIg==
+"@plumier/query-parser@1.0.0-canary.kmr00yo9.0+2c0ef31":
+  version "1.0.0-canary.kmr00yo9.0"
+  resolved "https://registry.yarnpkg.com/@plumier/query-parser/-/query-parser-1.0.0-canary.kmr00yo9.0.tgz#036b4dc4eccb669cd0f363aefe74f8ad0f76f2d5"
+  integrity sha512-DOa+cjkMtD3YDNFTz3eo12SKAR2ANETDM3RXvVLae77c+vhaQISIq3rMofSFDAIkKPcoaLIf3wHXKd30KOG85w==
   dependencies:
-    "@plumier/core" "1.0.0-canary.kmk7q7m0.0+fc85e35"
+    "@plumier/core" "1.0.0-canary.kmr00yo9.0+2c0ef31"
     "@types/nearley" "^2.11.1"
     nearley "^2.20.1"
 
-"@plumier/reflect@1.0.0-canary.kmk7q7m0.0+fc85e35":
-  version "1.0.0-canary.kmk7q7m0.0"
-  resolved "https://registry.yarnpkg.com/@plumier/reflect/-/reflect-1.0.0-canary.kmk7q7m0.0.tgz#85e56f31776b2087fb1c60e229cd6a5f628aa137"
-  integrity sha512-IaWlIU8lhMHYAcuWHrLLRQqFFZLPG0WMyEZTyOGq2HCER2JnolfOASo7Xs8vqkTG56MLHE7RESUFxj1Ld1Bpvg==
+"@plumier/reflect@1.0.0-canary.kmr00yo9.0+2c0ef31":
+  version "1.0.0-canary.kmr00yo9.0"
+  resolved "https://registry.yarnpkg.com/@plumier/reflect/-/reflect-1.0.0-canary.kmr00yo9.0.tgz#d9a97af740755b4137f777f0430fd14027c91da9"
+  integrity sha512-cWQNnkfGmmYzGugiVheSA2sKRD2Hbb5jXGlBHIlWPFXrWBMEpw45fZNLPWbotdDCrogG1VJR79kdxCRhQr2XHw==
   dependencies:
     "@types/acorn" "4.0.5"
     acorn "8.1.0"
     reflect-metadata "^0.1.13"
 
-"@plumier/serve-static@1.0.0-canary.kmk7q7m0.0+fc85e35":
-  version "1.0.0-canary.kmk7q7m0.0"
-  resolved "https://registry.yarnpkg.com/@plumier/serve-static/-/serve-static-1.0.0-canary.kmk7q7m0.0.tgz#ae52a4c6a34b154660fcea98c738fc76ec49c974"
-  integrity sha512-w1O2IctCtBcmvsCBh8aLOOsiwsIkVEghcqUat4Ji8LTRJX/QnWWXJgdRmUQwATEY0meatE1wWIFTIr+BpCErFQ==
+"@plumier/serve-static@1.0.0-canary.kmr00yo9.0+2c0ef31":
+  version "1.0.0-canary.kmr00yo9.0"
+  resolved "https://registry.yarnpkg.com/@plumier/serve-static/-/serve-static-1.0.0-canary.kmr00yo9.0.tgz#b8113122e8df858804fdb40c4e1b3d67e61056c7"
+  integrity sha512-cmiVhJEQporNSjBmewbmkmTTl2rz9jE/d3TkYuXoUpK/W0rK1QrYqbjSg58sdwKN+X2yUmvaZbFf9I20oz/PwQ==
   dependencies:
-    "@plumier/core" "1.0.0-canary.kmk7q7m0.0+fc85e35"
+    "@plumier/core" "1.0.0-canary.kmr00yo9.0+2c0ef31"
     "@types/koa-send" "^4.1.2"
     "@types/mime-types" "2.1.0"
     koa-send "^5.0.1"
     mime-types "2.1.29"
 
-"@plumier/swagger@1.0.0-canary.kmk7q7m0.0":
-  version "1.0.0-canary.kmk7q7m0.0"
-  resolved "https://registry.yarnpkg.com/@plumier/swagger/-/swagger-1.0.0-canary.kmk7q7m0.0.tgz#532ac2135a6e9b2d3e739ff2a01397960ce8d52a"
-  integrity sha512-qfAb4d9TudVSKYvSzmNKlyEY5ZnhEkWPCtGFaBcLw+PJmZqqpm0BbnhpXpcLZ0AZn9pXxGhHP6AgUIG+e6KWIA==
+"@plumier/swagger@1.0.0-canary.kmr00yo9.0":
+  version "1.0.0-canary.kmr00yo9.0"
+  resolved "https://registry.yarnpkg.com/@plumier/swagger/-/swagger-1.0.0-canary.kmr00yo9.0.tgz#ba4077ef17bfae9c3a3632620ca6c845291c3b87"
+  integrity sha512-DPNJqLitO3dYNXRay+JRbJaBQyW6AMxGYHhhlym0hulNTQthzz12Sd1n5DOwizGXDNywwjk90cjltmZpP2etiQ==
   dependencies:
-    "@plumier/core" "1.0.0-canary.kmk7q7m0.0+fc85e35"
-    "@plumier/generic-controller" "1.0.0-canary.kmk7q7m0.0+fc85e35"
-    "@plumier/serve-static" "1.0.0-canary.kmk7q7m0.0+fc85e35"
+    "@plumier/core" "1.0.0-canary.kmr00yo9.0+2c0ef31"
+    "@plumier/generic-controller" "1.0.0-canary.kmr00yo9.0+2c0ef31"
+    "@plumier/serve-static" "1.0.0-canary.kmr00yo9.0+2c0ef31"
     "@types/swagger-ui-dist" "^3.30.0"
     openapi3-ts "^2.0.1"
     swagger-ui-dist "3.44.1"
 
-"@plumier/testing@1.0.0-canary.kmk7q7m0.0":
-  version "1.0.0-canary.kmk7q7m0.0"
-  resolved "https://registry.yarnpkg.com/@plumier/testing/-/testing-1.0.0-canary.kmk7q7m0.0.tgz#f1a5d4478751e4a55fb4bd92f660382949f51725"
-  integrity sha512-ps9E+g/8H7MaOqr+WEHOPZkqQR3uNjWG20RbGPnglJjZjZDVN2f584r/4+0rE79kbY1ehCcg2u1ehNTc4UadQQ==
+"@plumier/testing@1.0.0-canary.kmr00yo9.0":
+  version "1.0.0-canary.kmr00yo9.0"
+  resolved "https://registry.yarnpkg.com/@plumier/testing/-/testing-1.0.0-canary.kmr00yo9.0.tgz#dba6108efa0df071ef313a942a4f7bad459bad22"
+  integrity sha512-h/92QRjdvjX6n2DwUHkWrPklxYKVKMCkdIBi82hhU8JLAHL/cXyhIbjY6iPqe+MwJJg3v8U+ikrbmMVEGtDkvw==
   dependencies:
     "@types/jest" "^26.0.20"
     jest "^26.6.3"
 
-"@plumier/typeorm@1.0.0-canary.kmk7q7m0.0":
-  version "1.0.0-canary.kmk7q7m0.0"
-  resolved "https://registry.yarnpkg.com/@plumier/typeorm/-/typeorm-1.0.0-canary.kmk7q7m0.0.tgz#d67c664cb7100a75b492e9ee6aa03ade3f7b7677"
-  integrity sha512-tTEjsmG1voTEkGwPXIW/MNkQqi2Qfpm+lwFG4CMrk3DD7DnLF7cTRjlR4lEnz91pwRPOuvDgKLA4+mHwOHEOmw==
+"@plumier/typeorm@1.0.0-canary.kmr00yo9.0":
+  version "1.0.0-canary.kmr00yo9.0"
+  resolved "https://registry.yarnpkg.com/@plumier/typeorm/-/typeorm-1.0.0-canary.kmr00yo9.0.tgz#7605988f299f64b4ddb32f59d2a924c2d3f1e796"
+  integrity sha512-HnGiP8QkNNZarGr5mO4pfugsxWzhHURILf2rLsjRMTkkJVC8wGmPg0vixkJM5/dg+ndQJGa7C4IUf8vrWaCZag==
   dependencies:
-    "@plumier/core" "1.0.0-canary.kmk7q7m0.0+fc85e35"
-    "@plumier/generic-controller" "1.0.0-canary.kmk7q7m0.0+fc85e35"
+    "@plumier/core" "1.0.0-canary.kmr00yo9.0+2c0ef31"
+    "@plumier/generic-controller" "1.0.0-canary.kmr00yo9.0+2c0ef31"
     "@types/pluralize" "^0.0.29"
     pluralize "^8.0.0"
     typeorm "^0.2.31"
 
-"@plumier/validator@1.0.0-canary.kmk7q7m0.0+fc85e35":
-  version "1.0.0-canary.kmk7q7m0.0"
-  resolved "https://registry.yarnpkg.com/@plumier/validator/-/validator-1.0.0-canary.kmk7q7m0.0.tgz#17d2149d76262686fba71af7d8e450fec14fd9e5"
-  integrity sha512-6ErUhNrd7iAR4pc9sSLQ92iN9VncoO+tsmlTISWDXLljNUZTyMyyo5CVTCxpOusNRROWE5cDby6vXA5iygcypQ==
+"@plumier/validator@1.0.0-canary.kmr00yo9.0+2c0ef31":
+  version "1.0.0-canary.kmr00yo9.0"
+  resolved "https://registry.yarnpkg.com/@plumier/validator/-/validator-1.0.0-canary.kmr00yo9.0.tgz#aea846e4fad80ba2bd0aeacd5edeff999015a64a"
+  integrity sha512-XSDHB+N7Nf3IXXHSzXlH9fZLCRva4xlj0ov/bEBwfBADjE4PB2wNd7pDJvaz+DrDva3ArJZtRtewxJjOh8kj6g==
   dependencies:
-    "@plumier/reflect" "1.0.0-canary.kmk7q7m0.0+fc85e35"
+    "@plumier/reflect" "1.0.0-canary.kmr00yo9.0+2c0ef31"
     "@types/validator" "^13.1.3"
     tslib "^2.1.0"
     validator "^13.5.2"
@@ -702,6 +704,11 @@
     "@types/express" "*"
     "@types/keygrip" "*"
     "@types/node" "*"
+
+"@types/debug@^4.1.5":
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/@types/debug/-/debug-4.1.5.tgz#b14efa8852b7768d898906613c23f688713e02cd"
+  integrity sha512-Q1y515GcOdTHgagaVFhHnIFQ38ygs/kmxdNpvpou+raI9UO3YZcHDngBSYKQklcKlvA7iuQlmIKbzvmxcOE9CQ==
 
 "@types/dotenv@^8.2.0":
   version "8.2.0"
@@ -1754,7 +1761,7 @@ debug@^3.2.6:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.1.0, debug@^4.1.1:
+debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
   integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
@@ -4221,14 +4228,14 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-plumier@1.0.0-canary.kmk7q7m0.0:
-  version "1.0.0-canary.kmk7q7m0.0"
-  resolved "https://registry.yarnpkg.com/plumier/-/plumier-1.0.0-canary.kmk7q7m0.0.tgz#d4a96144835bcba767c90358a035e625563d828e"
-  integrity sha512-8HRQmPg6HKqxijR1VmfvpYb7WrfCCv6wkjmknUuqML0sGBS66uGgTzoP3xYGi3kVxxLbWXN+B4ILiE1x0nYkXw==
+plumier@1.0.0-canary.kmr00yo9.0:
+  version "1.0.0-canary.kmr00yo9.0"
+  resolved "https://registry.yarnpkg.com/plumier/-/plumier-1.0.0-canary.kmr00yo9.0.tgz#6eda34e07f6f816004a31c6f793af7ebd4cdbafd"
+  integrity sha512-HP7pz1RM0S/KbZSJ7MThhLRFZe5v5DLNcUqwg3Eide9uP+LzLv4VotW8HaIatcaNDQ6fnCAT7bAKWZUCHvCRQQ==
   dependencies:
     "@koa/cors" "^3.1.0"
-    "@plumier/core" "1.0.0-canary.kmk7q7m0.0+fc85e35"
-    "@plumier/generic-controller" "1.0.0-canary.kmk7q7m0.0+fc85e35"
+    "@plumier/core" "1.0.0-canary.kmr00yo9.0+2c0ef31"
+    "@plumier/generic-controller" "1.0.0-canary.kmr00yo9.0+2c0ef31"
     "@types/bytes" "^3.1.0"
     "@types/koa" "^2.13.1"
     "@types/koa__cors" "^3.0.2"
