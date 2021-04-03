@@ -44,12 +44,6 @@ export class User extends EntityBase {
     @Column({ default: "User" })
     role: "User" | "Admin"
 
-    @OneToMany(x => ShippingAddress, x => x.user)
-    addresses:ShippingAddress[]
-
-    @OneToMany(x => ShopUser, x => x.user)
-    shops:ShopUser[]
-
     @preSave()
     async hashPassword() {
         if (this.password)
