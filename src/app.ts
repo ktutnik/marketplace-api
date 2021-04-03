@@ -7,7 +7,7 @@ import Plumier, { Configuration, LoggerFacility, WebApiFacility } from "plumier"
 function createApp(config?: Partial<Configuration>) {
     return new Plumier()
         .set({ ...config, rootDir: __dirname })
-        .set(new WebApiFacility({ rootPath: "api/v1" }))
+        .set(new WebApiFacility({ rootPath: "api/v1", bodyParser: { multipart: true } }))
         .set(new TypeORMFacility())
         .set(new JwtAuthFacility({ globalAuthorize: "AnyUser", }))
         .set(new SwaggerFacility())

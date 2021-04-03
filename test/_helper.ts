@@ -45,7 +45,6 @@ interface CreateShopOption {
     items?: Partial<Product>[]
 }
 
-
 export async function createShop(app: any, opt?: CreateShopOption) {
     const option: CreateShopOption = {
         staffs: [{ email: "putra.staff@gmail.com", name: "Putra Mahkota Staff" }],

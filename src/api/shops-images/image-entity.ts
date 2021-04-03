@@ -3,6 +3,7 @@ import { Column, Entity, ManyToOne } from "typeorm"
 
 import { EntityBase } from "../_shared/entity-base"
 import { User } from "../users/users-entity"
+import { Shop } from "../shops/shops-entity"
 
 
 @Entity()
@@ -21,8 +22,8 @@ export class Image extends EntityBase {
     size:number
 
     @authorize.readonly()
-    @ManyToOne(x => User)
-    createdBy:User
+    @ManyToOne(x => Shop)
+    shop:Shop
 
     @authorize.readonly()
     @Column()

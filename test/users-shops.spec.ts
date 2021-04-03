@@ -1,6 +1,6 @@
 import supertest from "supertest"
 import createApp from "../src/app"
-import { closeConnection, createShop, createUser, ignore } from "./helper"
+import { closeConnection, createShop, createUser, ignore } from "./_helper"
 
 
 afterEach(async () => {

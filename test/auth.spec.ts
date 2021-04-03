@@ -2,7 +2,7 @@ import decode from "jwt-decode"
 import supertest from "supertest"
 
 import createApp from "../src/app"
-import { closeConnection, createUser } from "./helper"
+import { closeConnection, createUser } from "./_helper"
 
 afterEach(async () => {
     await closeConnection()

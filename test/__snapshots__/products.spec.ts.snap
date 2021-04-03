@@ -1,96 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Products Should able to list all items globally 1`] = `
-Array [
-  Object {
-    "createdAt": "2021-03-27T20:13:43.000Z",
+Object {
+  "createdAt": Any<String>,
+  "deleted": false,
+  "id": Any<Number>,
+  "name": "MacBook Pro 16 2020",
+  "price": 2500,
+  "shop": Object {
+    "createdAt": Any<String>,
     "deleted": false,
-    "id": 1,
-    "name": "MacBook Pro 16 2020",
-    "price": 2500,
-    "shop": Object {
-      "createdAt": "2021-03-27T20:13:43.000Z",
-      "deleted": false,
-      "id": 1,
-      "name": "Putra Mahkota",
-      "updatedAt": "2021-03-27T20:13:43.000Z",
-    },
-    "updatedAt": "2021-03-27T20:13:43.000Z",
+    "id": Any<Number>,
+    "name": "Putra Mahkota",
+    "updatedAt": Any<String>,
   },
-  Object {
-    "createdAt": "2021-03-27T20:13:43.000Z",
-    "deleted": false,
-    "id": 2,
-    "name": "Li-Ion Battery",
-    "price": 250,
-    "shop": Object {
-      "createdAt": "2021-03-27T20:13:43.000Z",
-      "deleted": false,
-      "id": 1,
-      "name": "Putra Mahkota",
-      "updatedAt": "2021-03-27T20:13:43.000Z",
-    },
-    "updatedAt": "2021-03-27T20:13:43.000Z",
-  },
-  Object {
-    "createdAt": "2021-03-27T20:13:43.000Z",
-    "deleted": false,
-    "id": 3,
-    "name": "M3 SSD 1TB",
-    "price": 900,
-    "shop": Object {
-      "createdAt": "2021-03-27T20:13:43.000Z",
-      "deleted": false,
-      "id": 1,
-      "name": "Putra Mahkota",
-      "updatedAt": "2021-03-27T20:13:43.000Z",
-    },
-    "updatedAt": "2021-03-27T20:13:43.000Z",
-  },
-  Object {
-    "createdAt": "2021-03-27T20:13:44.000Z",
-    "deleted": false,
-    "id": 4,
-    "name": "MacBook Pro 16 2020",
-    "price": 2100,
-    "shop": Object {
-      "createdAt": "2021-03-27T20:13:44.000Z",
-      "deleted": false,
-      "id": 2,
-      "name": "Ali Shop",
-      "updatedAt": "2021-03-27T20:13:44.000Z",
-    },
-    "updatedAt": "2021-03-27T20:13:44.000Z",
-  },
-  Object {
-    "createdAt": "2021-03-27T20:13:44.000Z",
-    "deleted": false,
-    "id": 5,
-    "name": "Li-Ion Battery",
-    "price": 210,
-    "shop": Object {
-      "createdAt": "2021-03-27T20:13:44.000Z",
-      "deleted": false,
-      "id": 2,
-      "name": "Ali Shop",
-      "updatedAt": "2021-03-27T20:13:44.000Z",
-    },
-    "updatedAt": "2021-03-27T20:13:44.000Z",
-  },
-  Object {
-    "createdAt": "2021-03-27T20:13:44.000Z",
-    "deleted": false,
-    "id": 6,
-    "name": "M3 SSD 1TB",
-    "price": 800,
-    "shop": Object {
-      "createdAt": "2021-03-27T20:13:44.000Z",
-      "deleted": false,
-      "id": 2,
-      "name": "Ali Shop",
-      "updatedAt": "2021-03-27T20:13:44.000Z",
-    },
-    "updatedAt": "2021-03-27T20:13:44.000Z",
-  },
-]
+  "updatedAt": Any<String>,
+}
 `;

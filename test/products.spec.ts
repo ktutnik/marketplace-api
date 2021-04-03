@@ -1,6 +1,6 @@
 import supertest from "supertest"
 import createApp from "../src/app"
-import { createShop, createUser } from "./helper"
+import { createShop, createUser, ignore } from "./_helper"
 
 
 
@@ -25,10 +25,11 @@ describe("Products", () => {
             ]
         })
         const user = await createUser(app, { email: "jane.dane@gmail.com", name: "Jane Dane" })
-        const {body} = await supertest(app.callback())
+        const { body } = await supertest(app.callback())
             .get("/api/v1/products")
             .set("Authorization", `Bearer ${user.token}`)
             .expect(200)
-        expect(body).toMatchSnapshot()
+        expect(body.length).toBe(6)
+        expect(body[0]).toMatchSnapshot({ ...ignore, shop: { ...ignore } })
     })
 })
